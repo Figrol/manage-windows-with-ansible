@@ -6,4 +6,4 @@
   - name: Ensure {{ software }} is uninstalled
     win_chocolatey:
       name: '{{ software }}'
-      state: present
+      state: absent
