@@ -1,0 +1,7 @@
+---
+- name: Reboot machine
+  hosts: all
+  tasks:
+  
+  - name: Reboot the machine with all defaults
+    win_reboot:
