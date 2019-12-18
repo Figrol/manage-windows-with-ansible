@@ -1,1 +1,9 @@
+---
+- name : Install software
+  hosts: all
 
+  tasks:
+  - name: Ensure {{ software }} is installed
+    win_chocolatey:
+      name: '{{ software }}'
+      state: present
