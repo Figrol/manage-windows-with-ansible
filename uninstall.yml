@@ -1,0 +1,9 @@
+---
+- name : Uninstall software
+  hosts: all
+
+  tasks:
+  - name: Ensure {{ software }} is uninstalled
+    win_chocolatey:
+      name: '{{ software }}'
+      state: present
